@@ -1,0 +1,38 @@
+.form {
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    border: 1px solid $color-test;
+    display: block;
+    padding: 1rem 1rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+
+    &::placeholder {
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+    }
+
+    &:focus {
+      outline: none;
+      
+      &:valid {
+        border-bottom: 1px solid $color-green-primary;
+      }
+
+      &:invalid {
+        border-bottom: 1px solid $color-red-primary;
+      }
+    }
+  }
+
+  &__terms-and-cond {
+    color: $color-test;
+    padding: 0 1rem;
+    font-size: 0.65rem;
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+}

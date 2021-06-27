@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+
+  <body>
+    <!-- Heading -->
+    <header class="header">
+      <section class="header__heading">
+        <h4>Learn to code by watching others</h4>
+      </section>
+
+      <section class="header__text">
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Call To Action Button -->
+      <section class="cta">
+        <button class="button button-blue">
+          <strong>Try it free 7 days then $20/mo. thereafter</strong>
+        </button>
+      </section>
+
+      <!-- Form -->
+      <section class="section-form">
+        <form class="form" action="submit">
+          <input
+            class="form__input"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            class="form__input"
+            type="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            class="form__input"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <button class="button button-green" type="submit">
+            Claim your free trial
+          </button>
+          <p class="form__terms-and-cond">
+            By clicking the button, you are agreeing to our
+            <span style="color: hsl(0, 100%, 74%)">Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="attribution">
+      <p>
+        Coded by
+        <a class="attribution__link" href="https://github.com/erickwalker1"
+          >Detroit Dev</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

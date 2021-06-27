@@ -1,0 +1,75 @@
+body {
+  color: $color-white;
+  height: 100vh;
+  background: $color-red-primary url(../../images/bg-intro-mobile.png);
+
+  @include responsive(tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include responsive(desktop) {
+    margin-top: 10rem;
+    flex-direction: row;
+  }
+}
+
+.main {
+  @include responsive(desktop) {
+    width: 100%;
+  }
+}  
+
+.cta {
+  height: 5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  @include responsive(miniTablet) {
+    width: 50%;
+  }
+
+  @include responsive(tablet) {
+    max-width: 365px;
+    margin-bottom: 2rem;
+  }
+
+  @include responsive(desktop) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  @include responsive(largeDesktop) {
+    padding: 0;
+    max-width: 60%;
+  }
+}
+
+.section-form {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  border-radius: 7px;
+  background-color: $color-white;
+
+  @include responsive(largePhone) {
+    max-width: 19rem;
+  }
+
+  @include responsive(miniTablet) {
+    max-width: 23rem;
+  }
+
+  @include responsive(desktop) {
+    width: 100%;
+    align-self: center;
+  }
+
+  @include responsive(largeDesktop) {
+    max-width: 60%;
+  }
+} 

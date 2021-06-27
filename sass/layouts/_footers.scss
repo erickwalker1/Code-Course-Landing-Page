@@ -1,0 +1,13 @@
+.attribution {
+  font-size: 0.85rem;
+  text-align: center;
+
+  @include responsive(desktop) {
+    display: none;
+  }
+
+  &__link {
+    color: $color-green-primary;
+    text-decoration: none;
+  }
+}

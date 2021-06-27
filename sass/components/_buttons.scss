@@ -1,0 +1,39 @@
+.button {
+  color: $color-white;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &-blue {
+    width: 17rem;
+    padding: 0.9rem 2.75rem;
+    transition: all 0.25s;
+    line-height: 1.3rem;
+    background-color: $color-blue-primary;
+
+    &:hover {
+      background-color: $color-blue-primary-hovered;
+    }
+
+    @include responsive(miniTablet) {
+      min-width: 19rem;
+    }
+
+    @include responsive(miniTablet) {
+      width: 100%;
+    }
+  }
+
+  &-green {
+    width: 100%;
+    padding: 1rem 1rem;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    background-color: $color-green-primary;
+
+    &:hover {
+      background-color: $color-green-primary-hovered;
+    }
+  }
+}
